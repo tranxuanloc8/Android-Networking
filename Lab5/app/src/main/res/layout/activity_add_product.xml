@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".AddProductActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="40dp"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="21dip" />
+    <EditText
+        android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="21dip" />
+    <EditText
+        android:id="@+id/edtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:inputType="number"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="21dip"  />
+    <EditText
+        android:id="@+id/edtProductDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lines="3"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="Add Product"
+        android:layout_gravity="center"
+        android:backgroundTint="#00BCD4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd" />
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="cancel"
+        android:backgroundTint="#F44336"/>
+</LinearLayout>
